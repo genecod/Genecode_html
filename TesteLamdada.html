@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Lâmpada</title>
+    <script>
+        function mudaLampada(){
+            document.getElementById("lampada").src = "imagens/lampadaAcesa.jpg"
+            document.writeln(mudaLampada())
+
+
+           /* if(tipo == 2){
+                Imagens = "LampadaAcesa.jpg";
+            }
+
+            if(tipo==3){
+                imagens = "LampadaQuebrada.jpg";
+
+            }
+            document.getElementById("luz").src =imagens;
+          */
+        }
+    </script>
+
+    <style>
+        body{
+            background-color: gray;
+            font: normal 12pt "Arial Black";
+            color: white;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Minhas primeiras funções em JavaScript</h1>
+<img src ="Imagens/lampadaApagada.jpg" id = "lampada" onmousemove="mudaLampada()" onmouseout="mudaLampada()">
+
+
+
+</body>
+</html>
