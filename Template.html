@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        div{
+            /*border-color: solid #949599;*/
+            background-color: #799f99;
+            width: 200px;
+            height: 100px;
+            margin: 10px 15px 0px 10px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 0.5em;
+            border-bottom-width: 12px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <template id="tpl-1">
+        <li>{{Apolinario}}</li>
+    </template>
+    
+    <ul>
+
+    </ul>
+    <button type="button">Add</button>
+
+    <script>
+        const btn = document.querySelector('button');
+        const template = document.querySelector('#tpl-1');
+        const ul = document.querySelector('ul');
+
+        btn.addEventListener("click", e => {
+            ul.append(template.content.cloneNode(true));
+        });
+    </script>
+    <div>
+        Deus seja louvado para sempre!
+    </div>
+</body>
+</html>

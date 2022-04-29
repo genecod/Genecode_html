@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+	    header{
+		   background-color:lightgreen;
+		   height: 10vh;
+		   border: 0.1em solid rgb(49, 28, 172);
+		   text-align: center;
+           }
+	    section{
+			 display: flex;  
+			 flex-direction: row;
+			 padding: 0.1em              
+		}
+		main{
+			height:75vh;
+			background-color: rgb(117, 117, 161);
+			border: 0.1em solid black;
+			flex: 1;
+			padding: 0.1em;
+			}
+
+		aside{
+			background-color: rgb(168, 179, 152);
+			border: 0.1em solid black;
+			width: 20vw;
+			height: 75vh
+			padding: 0.1em
+		}
+		footer{
+			background-color: red;
+			border: 0.1em solid black;
+			padding: 0.1em;
+			height: 10vh;
+			text-align: center;
+			
+		}
+		
+		div.header{		
+				margin-top: 0;
+				padding-bottom: 10px;				
+		}
+		div.main{
+				margin-top: 80px;
+				padding: 0.5em;
+		}
+		.input{
+				border: solid .1em;
+				background-color: lightyellow;
+				padding: .2em;
+				width: 300px;
+				margin:.5em;
+		}
+		output{
+			color:red;
+			font-size: 12pt;
+		}
+		
+       
+    </style>
+</head>
+<body>
+    <header>
+		<div class ="header">
+			<h1>Cabeçalho</h1>
+		</div>        
+    </header>
+
+    <section>
+        <main>
+			<form oninput="saida.value=parseInt(entrada.value)">
+				<div class = "main">
+					<div class ="input">
+					<label>Entradacom valor inicial:</label>
+					<input name="valuex" type="number" value="12.4" step="0.2" min="0" max="20"/>
+					</div>				
+					
+					<div class ="input">
+						<label>Entrada tipo Range:</label>
+						<input name="valuex" id= "entrada" type="range" value="12.4" step="0.2" min="0" max="20"/>
+						<label>Saída de Dados:</label>
+						<output name="saida" for="entrada" value="10">10</output>
+					</div>
+				</div>
+			</form>			
+          
+        </main>
+         <hr>
+        <aside>
+        <input name="valuex" type="number"
+        value="12.4" step="0.2"
+        min="0" max="20"/>  
+       </aside>
+</section>
+<footer>
+    Roda pé
+</footer>
+    
+</body>
+</html>

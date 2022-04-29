@@ -1,0 +1,59 @@
+body{
+    background-color:aqua;
+    margin: 1.5px;
+}
+header{
+    border: solid 1px;
+    background-color:aquamarine;
+    border-radius: 0.3em;
+    height: 40px;
+    padding: 0.2em;
+    text-align: center;
+
+}
+
+section{
+    border: solid 1px;
+    background-color:rgb(100, 116, 145);
+    border-radius: 0.3em;
+    width: 68%;
+    float: right; /* Aseção ficará como flutuante posicionado a esquerda*/
+    padding: 0.3em;
+    height: 500px;
+    text-align: center;
+}
+
+aside{
+    border: solid 1px;
+    background-color:aquamarine;
+    border-radius: 0.3em;
+    float: left; /* Aseção ficará como flutuante posicionado a Direita*/
+    width: 30%;
+    padding: 0.3em;
+    height: 500px;
+    text-align: center;
+
+}
+
+footer{
+    border: solid 1px;
+    background-color:rgb(122, 133, 129);
+    border-radius: 0.3em;
+    height: 40px;
+    padding: 0.3em;
+    clear: both;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+code {
+
+    background: #2db34a;  
+    
+    
+    
+    font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+    
+        
+    }

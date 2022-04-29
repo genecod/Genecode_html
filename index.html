@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <style>
+      .botao{
+          border: none;
+          background-color: bisque;
+          border-radius: 5px;
+          padding: 10px; 30px;
+          font-family: arail;
+          font-size:12px;
+          text-decoration: none;
+      }  
+    </style>
+</head>
+<body>
+    <button type="button", class ="botao">Ok</button>
+    <a href="#" class="botao">Link</a>
+    <p contenteditable="true">active, para o instante onde o 
+        elemento está sendo pressionado pelo mouse.</p>
+
+        <li data-id="1" data-email="apol1093@hotmail.com"> Apolinario silva</li>
+        <li data-id="2" data-email="apolinario@gmail.com"> Apolinario</li>
+
+        <script>
+            document.querySelectorAll("li").forEach(liel =>
+            {
+                console.log(liel.dataset.email)
+            }
+            )
+        </script>
+</body>
+</html>

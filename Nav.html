@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Nav</title>
+    <style type=”text/css” media=”screen”></style>
+
+    <style>
+        body{
+            margin: 0%;
+            
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;            
+            margin: 0%;
+        }
+
+        header{
+            height: 10vh;
+            background-color: yellow;
+            text-align: center; 
+            padding: 0.2em;  
+        }
+        footer{
+            height: 10vh;
+            background-color: yellow;       
+            padding: 0.2em;
+            
+        }     
+        aside{
+            height: 90vh;
+            background-color: greenyellow;
+            width: 20vw;
+            padding: 0.2em;  
+        }
+        main{
+            height: 90vh;
+            background-color: aqua;
+            flex: 1; 
+            text-align: left; 
+            padding: 0.2em;   
+        }
+        ul{
+            margin: 0;
+        }
+        ol{
+            display: grid;
+        }
+
+        a {
+color: white;
+border:1px solid orange;
+background: gray;
+-webkit-transition: 0.5s linear;
+}
+a:hover {
+color: black;
+background: red;
+-webkit-transition: 0.5s linear;
+}
+
+
+
+div{
+    background-color: greenyellow;
+    border: 0.2em solid black;
+    border-radius: 0.5em;
+    width: 100px;
+    height: 50px;
+   text-align: center;
+   
+    
+}
+       
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Cursos</a>
+        </nav>
+    </header>
+
+    <section>    
+
+    <aside>
+        <u>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> Categorias</a></li>
+            <li><a href="#"> Loja Virtual</a></li>
+            <li><a href="#"> Contatos</a></li>            
+            <li><a href="D:\Desenvolvimento">Desenvolvimento</a>
+            <li><a href=""> Contatos</a></li>
+        </u>
+
+    </aside>
+    <main>        
+            <ol>
+               <li>m1 </li>
+               <li value="10" >m2 </li>
+               <li>m3 </li>
+               <li>m4 </li>
+            </ol>
+            <br>
+            <ol type="I">
+                <li>m1 </li>
+                <li>m2 </li>
+                <li>m3 </li>
+                <li>m4 </li>
+                <li>m5 </li>
+             </ol>
+             <br>
+            <ol type="a">
+                <li>m1 </li>
+                <li>m2 </li>
+                <li>m3 </li>
+                <li>m4 </li>
+                <li>m5 </li>
+             </ol>
+
+             <div>
+                 Girar
+             </div>
+        
+
+    </main>
+
+</section>
+
+    <footer>
+        <u>
+            <li><a href="#"> Potilica de privacidade</a></li>
+            <li><a href="#"> Termo de uso</a></li>
+            
+        </u>
+    </footer>
+
+
+    
+</body>
+</html>
